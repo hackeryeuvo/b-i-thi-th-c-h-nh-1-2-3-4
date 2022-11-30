@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chunhat</title>
+</head>
+<body>
+<canvas id="myCanvas" style="border: solid;width: 300px;height: 200px"></canvas>
+<script>
+    class Rectangle{
+        constructor(x,y,width,height,color){
+            this.x=x;
+            this.y=y;
+            this.width=width;
+            this.heigth=height;
+            this.color=color;
+        }
+        render(){
+            let ctx=document.getElementById("myCanvas").getContext("2d");
+            ctx.fillStyle=this.color;
+            ctx.fillRect(this.x,this.y,this.width,this.heigth);
+        }
+    }
+    let Rectangle1= new Rectangle(10,10,100,80,"red");
+    Rectangle1.render();
+</script>
+
+</body>
+</html>

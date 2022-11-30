@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [2,3,5,7,11,13,17];
+    let index = +prompt("Vị trí");
+    let nguyen = +prompt("Số Nguyên");
+
+    function insertNumberToArray(arr,nguyen,index){
+        if (index<0 || index>arr.length){
+            alert(arr);
+        } else {
+            arr.splice(index,0,nguyen);
+            alert(arr);
+        }
+    }
+    insertNumberToArray(arr, nguyen, index);
+</script>
+
+</body>
+</html>
